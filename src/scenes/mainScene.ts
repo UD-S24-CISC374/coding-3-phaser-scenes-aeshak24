@@ -151,9 +151,9 @@ export default class MainScene extends Phaser.Scene {
     //  .setOrigin(1, 0);
 
     update() {
-        const escKey = this.input.keyboard?.addKey(
-            Phaser.Input.Keyboard.KeyCodes.ESC
-        );
+        // const escKey = this.input.keyboard?.addKey(
+        //    Phaser.Input.Keyboard.KeyCodes.ESC
+        // );
         if (!this.cursors) {
             return;
         }
@@ -170,9 +170,9 @@ export default class MainScene extends Phaser.Scene {
         if (this.cursors.up.isDown && this.player?.body?.touching.down) {
             this.player.setVelocityY(-330);
         }
-        if (escKey?.isDown) {
-            this.scene.pause("MainScene");
-            this.scene.launch("SecondScene");
-        }
+        //if (escKey?.isDown) {
+        //   this.scene.pause("MainScene");
+        //  this.scene.launch("SecondScene");
+        // }
     }
 }

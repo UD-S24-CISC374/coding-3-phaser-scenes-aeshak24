@@ -10,9 +10,9 @@ export default class ThirdScene extends Phaser.Scene {
         });
         text.setOrigin(0.5, 0.5);
 
-        const escKey = this.input.keyboard?.addKey(
-            Phaser.Input.Keyboard.KeyCodes.ESC
-        );
+        // const escKey = this.input.keyboard?.addKey(
+        //    Phaser.Input.Keyboard.KeyCodes.ESC
+        // );
         this.input.on("pointerdown", () => {
             this.scene.start("FourthScene");
         });

@@ -14,9 +14,9 @@ export default class FourthScene extends Phaser.Scene {
         // this.add.image(400, 300, "flower");
         //this.add.image(400, 300, "elevator");
 
-        const escKey = this.input.keyboard?.addKey(
-            Phaser.Input.Keyboard.KeyCodes.ESC
-        );
+        // const escKey = this.input.keyboard?.addKey(
+        //     Phaser.Input.Keyboard.KeyCodes.ESC
+        //  );
         //const elevator = this.add.sprite(400, 300, "elevator").setInteractive();
         // elevator.on("pointerdown", () => {
         //   this.scene.start("SecondScene");
@@ -24,10 +24,10 @@ export default class FourthScene extends Phaser.Scene {
         // this.add. elevator.on("pointerdown", () => {
         //  this.scene.start("SecondScene");
         //  });
-        escKey?.on("down", () => {
-            this.scene.stop("FourthScene");
-            this.scene.resume("MainScene");
-        });
+        //  escKey?.on("down", () => {
+        //    this.scene.stop("FourthScene");
+        //   this.scene.resume("MainScene");
+        //  });
         this.input.on("pointerdown", () => {
             this.scene.start("FifthScene");
         });

@@ -10,13 +10,13 @@ export default class FifthScene extends Phaser.Scene {
         });
         text.setOrigin(0.5, 0.5);
 
-        const escKey = this.input.keyboard?.addKey(
-            Phaser.Input.Keyboard.KeyCodes.ESC
-        );
+        // const escKey = this.input.keyboard?.addKey(
+        //     Phaser.Input.Keyboard.KeyCodes.ESC
+        // );
 
-        escKey?.on("down", () => {
-            this.scene.stop("FifthScene");
-            this.scene.resume("MainScene");
-        });
+        //   escKey?.on("down", () => {
+        //     this.scene.stop("FifthScene");
+        //    this.scene.resume("MainScene");
+        // });
     }
 }
